@@ -25,20 +25,7 @@ def convert_obsidian_to_md(in_file):
         print(f"File not exist")
         return 
 
-    # Set front matter 
-    if not data.startswith("---"): 
-        mod_data = data[:].lower()
-        start = mod_data.index("tags:")
-        # end = mod_data.index("related:")
-        tags = data[start:]
-        matches = re.findall("#[^\s]*", tags)
-        yaml_data["tags"] = [ x.replace("#", "") for x in matches ]
 
-        front_matter =  "\n".join([ f"{k}: {v}" for k,v in yaml_data.items() ])
-        front_matter = "---\n" + front_matter + "\n---\n"
-        data = front_matter + data
-        print(" Front formatter set")
-    
     # Convert image urls from obsidian to md 
     obsidian_links = re.findall("!\[\[[^\]\]]*]]", data)        
     for x in obsidian_links:
@@ -51,12 +38,29 @@ def convert_obsidian_to_md(in_file):
         data = data.replace(x, md_link)
     if len(obsidian_links): print(" Links  updated")
 
+
+    # Set front matter 
+    if not data.startswith("---"): 
+        mod_data = data[:].lower()
+        start = mod_data.index("tags:")
+        # end = mod_data.index("related:")
+        tags = data[start:]
+        matches = re.findall("#[^\s]*", tags)
+        yaml_data["tags"] = [ x.replace("#", "") for x in matches ]
+        # yaml_data["summary"] = data[:20]
+
+        front_matter =  "\n".join([ f"{k}: {v}" for k,v in yaml_data.items() ])
+        front_matter = "---\n" + front_matter + "\n---\n"
+        data = front_matter + data
+        print(" Front formatter set")
+    
+    
     # final data         
     with open(in_file, "w", encoding="utf-8") as f:
         f.write(data)
 
 if __name__ == "__main__":
-    in_path = r"E:\Studies\obsidian\nextjs_blog\mind_tree_blog\data\blog\gan"
+    in_path = r"E:\Studies\obsidian\nextjs_blog\mind_tree_blog\data\blog\basics"
 
     if os.path.isdir(in_path):
         for in_file in os.listdir(in_path):
