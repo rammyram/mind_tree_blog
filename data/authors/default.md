@@ -8,4 +8,9 @@ twitter:
 linkedin: https://www.linkedin.com/in/bhargav-vadlamudi/
 ---
 
-NA
+Hello guys this is Rammy. I stack my notes here, feel free to checkout 😊
+
+```
+> Take joy in what you have, appreciate every aspect of life 
+> Don't manage your time, manage your focus ; Darius Foroux 
+```
