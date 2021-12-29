@@ -157,7 +157,7 @@ Tags:
 #lipschitz_constraint
 
 Reference : 
-
+- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 - Since KL divergence and Jason Shannon divergence cause vanishing gradient problem, we moved to [Wassertein loss (must read blog)](https://medium0.com/@jonathan_hui/gan-wasserstein-gan-wgan-gp-6a1a2aa1b490)
 - [WGAN Paper](https://arxiv.org/pdf/1701.07875.pdf)
 

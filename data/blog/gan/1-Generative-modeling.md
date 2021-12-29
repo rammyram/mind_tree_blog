@@ -47,6 +47,7 @@ Tags:
 #representational_learning 
 
 Reference : 
+- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 
 Source : 
 

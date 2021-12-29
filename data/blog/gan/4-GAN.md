@@ -76,6 +76,7 @@ Tags:
 #variational_autoencoder 
 
 Reference : 
+	- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 	- Upsampling vs conv2DTranspose --> 
 		- https://machinelearningmastery.com/upsampling-and-transpose-convolution-layers-for-generative-adversarial-networks/
 		- https://naokishibuya.medium.com/up-sampling-with-transposed-convolution-9ae4f2df52d0

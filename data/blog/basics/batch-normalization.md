@@ -30,7 +30,7 @@ summary:
 	- The mean of $x$ is determined by complex interaction of previous layers. However In the new input $(z*g)+b$ the mean is solely determined by b, this is much easier for gradient descent to learn.  
 
 ---
-Status: #writing
+Status: #done
 
 Tags: 
 #batch_normalization

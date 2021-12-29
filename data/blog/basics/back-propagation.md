@@ -2,7 +2,7 @@
 title: Back Propagation
 date: 2021-10-10
 tags: ['back_propagation', 'udacity']
-draft: false
+draft: true
 summary: 
 ---
 # What is Back Propagation 

@@ -69,6 +69,7 @@ Tags:
 #conditional_gan
 
 Reference : 
+    - https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 	- [An-introduction-to-conditional-gans-cgans](https://medium.datadriveninvestor.com/an-introduction-to-conditional-gans-cgans-727d1f5bb011)
 	- [[Conditional_GAN.pdf]]
 

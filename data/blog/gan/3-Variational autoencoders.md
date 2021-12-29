@@ -110,8 +110,9 @@ Tags:
 #kullback_leibler_divergence
 
 Reference : 
-[[AI/GAN/2-Autoencoders]] 
-[[AI/Math/2_probability distribution#Normal Distribution]]
+- [[AI/GAN/2-Autoencoders]] 
+- [[AI/Math/2_probability distribution#Normal Distribution]]
+- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 
 Source : 
 

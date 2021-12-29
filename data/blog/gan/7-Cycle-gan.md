@@ -139,5 +139,5 @@ Tags:
 #neural_style_transfer
 
 Reference : 
-[[Cycle_GAN.pdf]]
-
+- [[Cycle_GAN.pdf]]
+- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/

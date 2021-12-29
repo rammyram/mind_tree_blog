@@ -66,7 +66,8 @@ Tags:
 #variational_autoencoder
 
 Reference : 
-[[AI/GAN/1-Generative-modeling#Representational Learning]]
+- [[AI/GAN/1-Generative-modeling#Representational Learning]]
+- https://www.oreilly.com/library/view/generative-deep-learning/9781492041931/
 
 Source : 
 

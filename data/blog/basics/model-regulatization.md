@@ -2,7 +2,7 @@
 title: Model Regulatization
 date: 2021-10-10
 tags: ['model_regularization', 'weight_decay']
-draft: false
+draft: true
 summary: 
 ---
 
