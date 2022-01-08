@@ -1,10 +1,26 @@
 ---
-title: Unbiased teacher for semi supervised object detection
-date: 2021-10-09
+title: Unbiased Teacher For Semi Supervised Object Detection
+date: 2022-01-08
 tags: ['paper', 'focal_loss', 'EMA', 'student_teacher']
+images: ['/static/images/ai/unbiased-teacher-for-semi-supervised_ground_1.png']
 draft: false
 summary: 
 ---
+# Lay the ground
+- The below images lay the ground on understanding few problems in real world. 
+
+
+![/static/images/ai/unbiased-teacher-for-semi-supervised_ground_1.png](/static/images/ai/unbiased-teacher-for-semi-supervised_ground_1.png)
+
+
+
+![/static/images/ai/unbiased-teacher-for-semi-supervised_ground_2.png](/static/images/ai/unbiased-teacher-for-semi-supervised_ground_2.png)
+
+
+
+![/static/images/ai/unbiased-teacher-for-semi-supervised_ground_3.png](/static/images/ai/unbiased-teacher-for-semi-supervised_ground_3.png)
+
+
 # Main Idea 
 
 The heart of this paper is coming up with a new learning framework called **Unbiased Teacher**, which can avoid the class imbalance problem when pseudo labeling is used in SSL. 
@@ -109,8 +125,10 @@ The heart of this paper is coming up with a new learning framework called **Unbi
 		- Now feeding this biased pseudo labels for training is gonna aggravate the class imbalance issue and cause sever over fitting. 
 		- Observe heavy over-fitting in the below image for the background & foreground classifier in RPN and multi-class classification in ROI Head 
 		
-		![/static/images/ai/unbiased_teacher_ssl_rpn_overfitting.png](/static/images/ai/unbiased_teacher_ssl_rpn_overfitting.png)
+		
+![/static/images/ai/unbiased_teacher_ssl_rpn_overfitting.png](/static/images/ai/unbiased_teacher_ssl_rpn_overfitting.png)
 
+	
 	-  **Solution :** 
 		-  Unbiased Teacher Framework used in this paper
 		-  Shifting from Cross entropy loss to Focal Loss.
@@ -118,7 +136,7 @@ The heart of this paper is coming up with a new learning framework called **Unbi
 
 -  **More Accurate Pseudo Labels are created :**
 	-  Previous methods freeze the models trained on supervised data to generate Pseudo Labels .
-	-  **Solution:** But this method uses teacher student mutual learning framework to gradually improve the pseudo labels generated for SSL. 
+	-  **Solution: ** But this method uses teacher student mutual learning framework to gradually improve the pseudo labels generated for SSL. 
 
 
 # Related Work
@@ -147,6 +165,7 @@ Tags:
 #paper 
 #focal_loss
 #EMA 
+#student_teacher 
 
 Source : 
 - [paper](https://arxiv.org/abs/2102.09480)

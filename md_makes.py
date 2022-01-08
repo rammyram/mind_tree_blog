@@ -60,7 +60,7 @@ def convert_obsidian_to_md(in_file):
         f.write(data)
 
 if __name__ == "__main__":
-    in_path = r"E:\Studies\obsidian\nextjs_blog\mind_tree_blog\data\blog\books"
+    in_path = r"E:\Studies\obsidian\nextjs_blog\mind_tree_blog\data\blog\papers"
 
     if os.path.isdir(in_path):
         for in_file in os.listdir(in_path):
